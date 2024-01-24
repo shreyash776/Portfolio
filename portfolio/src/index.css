@@ -198,7 +198,71 @@ a{
 }
 .progress{
   position:sticky;
+  top:0;
+  left:0;
+  padding-top:3px;
+  text-align: center;
+  color:orange;
+  font-size: 26px;
 }
-.progress h1{
 
+.progressBar{
+  height:5px;
+  margin-top: -15px;
+  background-color: white;
+}
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;  
+  padding-bottom: 100px;  
+  overflow: hidden;
+}
+.img-box{
+  flex:1;
+  height:50%;
+  width:auto;
+  
+  
+}
+.img-box img{
+  height:100%;
+  width:auto;
+  object-fit:cover;
+
+}
+
+.textContainer{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  padding-top: 170px;
+}
+.textContainer h2{
+  font-size: 65px;
+  white-space: nowrap;
+}
+.textContainer p{
+  font-size: 20px;
+  color:gray;
+}
+.textContainer button{
+
+  background-color: orange;
+  border:none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+.p-wrapper{
+  max-width: 1100px;
+  height: 100%;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  gap:50px;
 }

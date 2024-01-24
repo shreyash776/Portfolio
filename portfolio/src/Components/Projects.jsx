@@ -1,11 +1,12 @@
 import React,{useRef}from 'react'
-import {motion,useScroll,useSpring} from "framer-motion"
+import {motion,useScroll,useSpring, useTransform} from "framer-motion"
 const items=[
     {
         id:1,
         title:"Nike Store",
         desc:"vestibulum tristique odio, et aliquet arcu feugiat at. Suspendisse potenti. Proin feugiat arcu id dui fringilla, vel varius justo ultricies. Integer malesuada quam et congue ",
-        img:"https://images.pexels.com/photos/16861541/pexels-photo-16861541/free-photo-of-arbres.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        img:"https://images.pexels.com/photos/19738565/pexels-photo-19738565/free-photo-of-grand-central-madison.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+        
     },
     {
         id:2,
@@ -22,15 +23,35 @@ const items=[
     {
         id:4,
         title:"amazon-clone",
-        img:"https://images.pexels.com/photos/19877105/pexels-photo-19877105/free-photo-of-traditional-mongolian-archer.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+        img:"https://images.pexels.com/photos/19738565/pexels-photo-19738565/free-photo-of-grand-central-madison.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+      
         desc:"vestibulum tristique odio, et aliquet arcu feugiat at. Suspendisse potenti. Proin feugiat arcu id dui fringilla, vel varius justo ultricies. Integer malesuada quam et congue "
     },
 ]
 
 const Single=({item})=>{
+
+    const ref=useRef();
+
+    const {scrollYProgress}=useScroll({
+        target:ref,
+    });
+    const y=useTransform(scrollYProgress,[0,1],[-400,400]);
  return(
-    <section>
-        {item.title}
+    <section >
+       <div className='container'>
+       <div className='p-wrapper'>
+       <div className='img-box' ref={ref}>
+       <img  src={item.img} alt="" />
+        </div>
+        <motion.div className='textContainer' style={{y}} >
+            <h2>{item.title}</h2>
+            <p>{item.desc}</p>
+            <button>See Demo</button>
+        </motion.div>
+       </div>
+       
+       </div>
     </section>
  )
 }
