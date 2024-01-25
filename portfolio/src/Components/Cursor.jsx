@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-
+import {motion} from "framer-motion"
 const Cursor = () => {
  
  const[position,setPosition]=useState({x:0,y:0});
@@ -11,12 +11,12 @@ const Cursor = () => {
     return ()=>{
         window.removeEventListener("mousemove",mouseMove);
     };
-  }) ;
+  },[]) ;
  
  return (
-    <div className='cursor'>
+    <motion.div className='cursor' animate={{x:position.x +10 ,y:position.y+10}}>
       
-    </div>
+    </motion.div>
   )
 }
 
