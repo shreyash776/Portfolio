@@ -244,6 +244,7 @@ a{
 .textContainer h2{
   font-size: 65px;
   white-space: nowrap;
+  z-index: -5;
 }
 .textContainer p{
   font-size: 20px;
@@ -265,4 +266,79 @@ a{
   display: flex;
   align-items: center;
   gap:50px;
+}
+.contact-container{
+  height: 100%;
+ max-width: 1100px;
+ margin:auto;
+ display: flex;
+ align-items: center;
+ gap:10px;
+ padding-bottom:50px;
+
+}
+.c-textContainer{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:10px;
+}
+.contact-container h1{
+   font-size: 100px;
+   line-height: 88px;
+}
+.contact-container span{
+  font-weight: 300;
+}
+.formContainer{
+  flex:1;
+  
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.formContainer input,textarea{
+padding:20px;
+background-color: transparent;
+border:1px solid white;
+color:white;
+border-radius: 5px;
+}
+form button{
+  padding:15px;
+  border:none;
+  background-color: orange;
+  cursor: pointer;
+  font-weight: 500;
+}
+form button:active{
+  transform: scale(1.02);
+}
+.phoneSvg{
+ 
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+ 
+}
+ .phoneSvg svg{
+
+  height: 380px;
+  width: 380px;
+  font-weight:100;
+  stroke: orange;
+  stroke-width:3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill:none;
+}
+.cursor{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  border:1px solid white;
+  position:fixed;
 }

@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import Parallix from './Components/Parallix'
 import Projects from './Components/Projects'
+import Contact from './Components/Contact'
 import './App.css'
 function App() {
   
@@ -15,7 +16,9 @@ function App() {
     </section>
     <section > <Parallix /></section> 
         <Projects />
-    <section id='Contact'>Contact</section>
+    <section id='Contact'>
+      <Contact />
+    </section>
    
     </>
   )
