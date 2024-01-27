@@ -109,9 +109,11 @@ a{
 }
 .img-container img{
   height:32.4rem;
-  width:28.5rem;
-  border-radius: 80%;
+  width:25.5rem;
+  /* border-radius: 40%; */
+  padding-right: 80px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  /* background-color: aqua; */
 }
 .scroll-img{
   color:white;

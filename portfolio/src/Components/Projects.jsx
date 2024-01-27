@@ -12,18 +12,18 @@ const items=[
         id:2,
         title:"plant vs zombie",
         desc:"plant vs zombie game built using javascript ",
-        img:"/public/Screenshot 2024-01-25 201551.png"
+        img:"/Screenshot 2024-01-25 201551.png"
     },
     {
         id:3,
         title:"Todo-list",
-        img:"/public/todo.png ",
+        img:"/todo.png ",
         desc:  "A sleek and efficient React-powered todo list for seamless task management."
     },
     {
         id:4,
         title:"amazon-clone",
-        img:"/public/amazon.png",
+        img:"/amazon.png",
       
         desc:"A visually stunning Amazon clone list crafted with HTML and CSS for immersive online shopping experience."
     },
@@ -31,7 +31,7 @@ const items=[
     {
         id:5,
         title:"Traveler",
-        img:"/public/traveller.png",
+        img:"/traveller.png",
       
         desc:"A traveler website list featuring destinations and experiences, crafted with HTML, CSS, and Js"
     },
@@ -40,14 +40,14 @@ const items=[
     {
         id:6,
         title:"Weather",
-        img:"/public/weather.png",
+        img:"/weather.png",
       
         desc:"A modern weather app powered by React, delivering real-time forecasts and intuitive user experience for weather updates."
     },
     {
         id:7,
         title:"Js Animations",
-        img:"/public/animation.png",
+        img:"/animation.png",
       
         desc:
         "A captivating web page enhanced with JavaScript animations, offering an engaging user experience through dynamic visual effects and interactivity."
