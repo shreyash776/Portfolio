@@ -102,12 +102,16 @@ a{
 .img-container{
   height:100%;
   position:absolute;
+  border-radius: 50%;
+  
   top:0;
   right:0;
 }
 .img-container img{
-  height:34.4rem;
-  width:37.5rem;
+  height:32.4rem;
+  width:28.5rem;
+  border-radius: 80%;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 .scroll-img{
   color:white;
@@ -140,6 +144,9 @@ a{
   font-size:4.68rem;
   margin:0;
 }   
+.buttons{
+  z-index: 9999999999999999999999999999999999999999999999999999999999999999999;
+}
 .buttons button{
   padding:20px;
   border:1px solid white;
@@ -149,6 +156,7 @@ a{
   margin-right:20px;
   cursor:pointer;
   font-weight: 300;
+  z-index: 999999999999999999999999999999999999999999999999999;
 }        
 .sliding-text{
   position:absolute;
@@ -224,6 +232,7 @@ a{
   flex:1;
   height:50%;
   width:auto;
+  object-fit:cover;
   
   
 }
@@ -343,3 +352,4 @@ form button:active{
   position:fixed;
   z-index: 99;
 }
+

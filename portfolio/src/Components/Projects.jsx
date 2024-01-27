@@ -4,28 +4,53 @@ const items=[
     {
         id:1,
         title:"Nike Store",
-        desc:"vestibulum tristique odio, et aliquet arcu feugiat at. Suspendisse potenti. Proin feugiat arcu id dui fringilla, vel varius justo ultricies. Integer malesuada quam et congue ",
-        img:"https://images.pexels.com/photos/19738565/pexels-photo-19738565/free-photo-of-grand-central-madison.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+        desc:"This project is an e-commerce website developed using React.js, offering a user-friendly interface for browsing and purchasing premium footwear. ",
+        img:"/nike.png"
         
     },
     {
         id:2,
         title:"plant vs zombie",
-        desc:"vestibulum tristique odio, et aliquet arcu feugiat at. Suspendisse potenti. Proin feugiat arcu id dui fringilla, vel varius justo ultricies. Integer malesuada quam et congue ",
-        img:"https://images.pexels.com/photos/19738565/pexels-photo-19738565/free-photo-of-grand-central-madison.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+        desc:"plant vs zombie game built using javascript ",
+        img:"/public/Screenshot 2024-01-25 201551.png"
     },
     {
         id:3,
-        title:"todo-list",
-        img:"https://images.pexels.com/photos/19869392/pexels-photo-19869392/free-photo-of-church-in-mountain-valley.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-        desc:"vestibulum tristique odio, et aliquet arcu feugiat at. Suspendisse potenti. Proin feugiat arcu id dui fringilla, vel varius justo ultricies. Integer malesuada quam et congue "
+        title:"Todo-list",
+        img:"/public/todo.png ",
+        desc:  "A sleek and efficient React-powered todo list for seamless task management."
     },
     {
         id:4,
         title:"amazon-clone",
-        img:"https://images.pexels.com/photos/19738565/pexels-photo-19738565/free-photo-of-grand-central-madison.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+        img:"/public/amazon.png",
       
-        desc:"vestibulum tristique odio, et aliquet arcu feugiat at. Suspendisse potenti. Proin feugiat arcu id dui fringilla, vel varius justo ultricies. Integer malesuada quam et congue "
+        desc:"A visually stunning Amazon clone list crafted with HTML and CSS for immersive online shopping experience."
+    },
+ 
+    {
+        id:5,
+        title:"Traveler",
+        img:"/public/traveller.png",
+      
+        desc:"A traveler website list featuring destinations and experiences, crafted with HTML, CSS, and Js"
+    },
+
+
+    {
+        id:6,
+        title:"Weather",
+        img:"/public/weather.png",
+      
+        desc:"A modern weather app powered by React, delivering real-time forecasts and intuitive user experience for weather updates."
+    },
+    {
+        id:7,
+        title:"Js Animations",
+        img:"/public/animation.png",
+      
+        desc:
+        "A captivating web page enhanced with JavaScript animations, offering an engaging user experience through dynamic visual effects and interactivity."
     },
 ]
 
@@ -38,7 +63,7 @@ const Single=({item})=>{
     });
     const y=useTransform(scrollYProgress,[0,1],[-400,400]);
  return(
-    <section >
+    <section id="Projects" >
        <div className='container'>
        <div className='p-wrapper'>
        <div className='img-box' ref={ref}>

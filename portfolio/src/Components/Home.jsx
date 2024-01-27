@@ -37,6 +37,7 @@ const sliderVariants={
     },
 };
 
+
 const Home = () => {
   return (
     <div className='hero'>
@@ -46,7 +47,9 @@ const Home = () => {
         <motion.h1 variants={textVariants}>Web Developer</motion.h1>
         <motion.div className='buttons' variants={textVariants}>
             <motion.button variants={textVariants}>See the Latest projects</motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants}  ><a href="#Contact" >
+               Contact Me
+            </a></motion.button>
         </motion.div>
         <motion.img variants={textVariants} animate="scrollBtn" className="scroll-img" src="/public/new.png" height="80px" width="80px"></motion.img>
     </motion.div>
@@ -56,7 +59,7 @@ const Home = () => {
   <h1>Web Developer  React.Js</h1>
    </motion.div>
     <div className='img-container'>
-  <img src="/public/3219866.png" ></img>
+  <img src="/public/Untitled_design__1_-removebg-preview.png" ></img>
     </div>
     </div>
   )

@@ -26,7 +26,7 @@ import {motion} from 'framer-motion'
  };
 
 const Links = () => {
-    const items=["Homepage","Services","portfolio","Contact","About"];
+    const items=["Homepage","Projects","Contact","About"];
   return (
     <motion.div className='links' variants={variants}>
       {

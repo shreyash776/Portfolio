@@ -43,7 +43,7 @@ const Contact = () => {
     </motion.div>
     <motion.div  variants={variants} className='item'>
         <h2>phone.no</h2>
-        <span>941553425</span>
+        <span>6394846293</span>
     </motion.div>
     <motion.div  variants={variants} className='item'>
         <h2>Mail</h2>
