@@ -51,7 +51,7 @@ const Home = () => {
                Contact Me
             </a></motion.button>
         </motion.div>
-        <motion.img variants={textVariants} animate="scrollBtn" className="scroll-img" src="/public/new.png" height="80px" width="80px"></motion.img>
+        <motion.img variants={textVariants} animate="scrollBtn" className="scroll-img" src="/new.png" height="80px" width="80px"></motion.img>
     </motion.div>
    </div>
    <motion.div variants={sliderVariants} initial="initial" animate="animate" className='sliding-text'>
