@@ -4,9 +4,10 @@
  font-family: "DM sans",sans-serif;
 }
 html{
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
 }
+
 section{
   height:100vh; 
   scroll-snap-align: center;
@@ -108,8 +109,8 @@ a{
   right:0;
 }
 .img-container img{
-  height:32.4rem;
-  width:25.5rem;
+  height:auto;
+  width:42rem;
   /* border-radius: 40%; */
   padding-right: 80px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
@@ -329,11 +330,9 @@ form button:active{
   transform: scale(1.02);
 }
 .phoneSvg{
- 
   position: absolute;
   margin: auto;
   z-index: -1;
- 
 }
  .phoneSvg svg{
 
@@ -354,4 +353,11 @@ form button:active{
   position:fixed;
   z-index: 99;
 }
-
+.project-img{
+ border-radius:10px;
+ transition: .2s ease-in-out all;
+}
+.project-img:hover{
+  transform: translateX(16px);
+  transform: scale(1.1);
+}

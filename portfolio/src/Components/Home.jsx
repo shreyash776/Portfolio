@@ -59,7 +59,7 @@ const Home = () => {
   <h1>Web Developer  React.Js</h1>
    </motion.div>
     <div className='img-container'>
-  <img src="/shreyash2-removebg-preview.png" ></img>
+  <img src="/public/final-img.png" ></img>
     </div>
     </div>
   )
