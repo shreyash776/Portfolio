@@ -1,7 +1,9 @@
 
 *{
  box-sizing: border-box;
- font-family: "DM sans",sans-serif;
+ /* font-family: "DM sans",sans-serif; */
+ font-family: 'Titillium Web';
+ 
 }
 html{
   /* scroll-snap-type: y mandatory; */
@@ -11,9 +13,12 @@ html{
 section{
   height:100vh; 
   scroll-snap-align: center;
+  /* background-color: white; */
+
 }
 body{ 
    background-color: #0c0c1d;
+   /* background-color: white; */
    color:lightgray;
    overflow-x: hidden;
    margin:0;
@@ -64,8 +69,8 @@ a{
 
 }
 .side-btn{
-  width:3.127rem;
-  height:3.127rem;
+  width:3rem;
+  height:3rem;
   border-radius: 50%;
   position:fixed;
   top:25px;
@@ -99,6 +104,30 @@ a{
   background: linear-gradient(180deg,#0c0c1d,#111132);
   overflow: hidden;
   position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  width:100vw;
+  justify-content: space-between;
+ 
+}
+.hero button:hover{
+  background-color: white;
+  color:black;
+}
+.home-wrapper{
+  width:70%;
+  flex: 1 0 70%; 
+  max-width: 50%; 
+
+}
+.home-wrapper button a{
+  width:100%;
+  height:100%;
+}
+
+.hero .img-container {
+  flex: 1 0 50%; 
+  max-width: 50%; 
 }
 .img-container{
   height:100%;
@@ -110,7 +139,7 @@ a{
 }
 .img-container img{
   height:auto;
-  width:42rem;
+  width:38rem;
   /* border-radius: 40%; */
   padding-right: 80px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
@@ -138,7 +167,7 @@ a{
 }  
 .text-container h2{
   font-size:1.875rem;
-  color:rebeccapurple;
+  color:white;
   letter-spacing: 6px;
   margin:0;
 
@@ -252,10 +281,11 @@ a{
   flex-direction: column;
   gap:30px;
   padding-top: 170px;
+  /* padding-right:1rem; */
 }
 .textContainer h2{
   font-size: 65px;
-  white-space: nowrap;
+  white-space:wrap;
   z-index: -5;
 }
 .textContainer p{

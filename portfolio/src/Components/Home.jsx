@@ -44,9 +44,9 @@ const Home = () => {
    <div className='home-wrapper'>
    <motion.div className='text-container' variants={textVariants} initial="initial" animate="animate">
         <motion.h2 variants={textVariants}>SHREYASH CHAURASIA</motion.h2>
-        <motion.h1 variants={textVariants}>Web Developer</motion.h1>
+        <motion.h1 variants={textVariants}>I build things for the web</motion.h1>
         <motion.div className='buttons' variants={textVariants}>
-            <motion.button variants={textVariants}>See the Latest projects</motion.button>
+            <motion.button variants={textVariants}><a href="#Projects">See the Latest projects</a></motion.button>
             <motion.button variants={textVariants}  ><a href="#Contact" >
                Contact Me
             </a></motion.button>
@@ -56,7 +56,7 @@ const Home = () => {
    </div>
    <motion.div variants={sliderVariants} initial="initial" animate="animate" className='sliding-text'>
      
-  <h1>Web Developer  React.Js</h1>
+  <h1> Web Developer React.Js </h1>
    </motion.div>
     <div className='img-container'>
   <img src="/public/final-img.png" ></img>
