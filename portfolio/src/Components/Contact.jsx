@@ -39,14 +39,14 @@ const Contact = () => {
 
     <motion.div   variants={variants} className='item'>
         <h2>Address</h2>
-        <span>akgec ghaziabad</span>
+        <span>Akgec Ghaziabad ,India</span>
     </motion.div>
     <motion.div  variants={variants} className='item'>
-        <h2>phone.no</h2>
+        <h2>Phone no.</h2>
         <span>6394846293</span>
     </motion.div>
     <motion.div  variants={variants} className='item'>
-        <h2>Mail</h2>
+        <h2>Email</h2>
         <span>shreyashchaurasia77@gmail.com</span>
     </motion.div>
       </motion.div>
@@ -79,8 +79,8 @@ const Contact = () => {
        ref={formRef} initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4,duration:1}}>
         <input type="text" required  placeholder='name' name="name"/>
         <input type="email" required  placeholder='email' name="email" />
-        <textarea rows={4} placeholder='message' name="message" ></textarea>
-        <button>submit</button>
+        <textarea rows={4} placeholder='message' name="message"style={{ resize: 'none' }} ></textarea>
+        <button>Submit</button>
       </motion.form>
     </div>
      </motion.div>

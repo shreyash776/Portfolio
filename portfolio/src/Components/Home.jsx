@@ -44,7 +44,7 @@ const Home = () => {
    <div className='home-wrapper'>
    <motion.div className='text-container' variants={textVariants} initial="initial" animate="animate">
         <motion.h2 variants={textVariants}>SHREYASH CHAURASIA</motion.h2>
-        <motion.h1 variants={textVariants}>I build things for the web</motion.h1>
+        <motion.h1 variants={textVariants}>Fueling the web with code and creativity.</motion.h1>
         <motion.div className='buttons' variants={textVariants}>
             <motion.button variants={textVariants}><a href="#Projects">See the Latest projects</a></motion.button>
             <motion.button variants={textVariants}  ><a href="#Contact" >

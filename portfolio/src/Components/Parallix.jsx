@@ -10,14 +10,14 @@ const Parallix = () => {
   })
 
   const yText=useTransform(scrollYProgress,[0,1],["0%","300%"]);
-//   const yBg=useTransform(scrollYProgress,[0,1],["0%","100%"]);
+  const yBg=useTransform(scrollYProgress,[0,0.7],["0%","50%"]);
 
   return (
     <div className='parallix'
     ref={ref}>
       <motion.h1 style={{y:yText}}>What I Do!</motion.h1>
         <motion.div className='mountain'></motion.div>
-        {/* <motion.div style={{x:yBg}} className='stars'></motion.div> */}
+        <motion.div style={{x:yBg}} className='stars'></motion.div>
     </div>
   )
 }
