@@ -40,8 +40,8 @@ const sliderVariants={
 
 const Home = () => {
   return (
-    <div className='hero'>
-   <div className='home-wrapper'>
+    <div className='hero' >
+   
    <motion.div className='text-container' variants={textVariants} initial="initial" animate="animate">
         <motion.h2 variants={textVariants}>SHREYASH CHAURASIA</motion.h2>
         <motion.h1 variants={textVariants}>Fueling the web with code and creativity.</motion.h1>
@@ -53,14 +53,14 @@ const Home = () => {
         </motion.div>
         <motion.img variants={textVariants} animate="scrollBtn" className="scroll-img" src="/new.png" height="80px" width="80px"></motion.img>
     </motion.div>
-   </div>
+  
+    <div className='img-container'>
+  <img src="/final-img.png" ></img>
+    </div>
    <motion.div variants={sliderVariants} initial="initial" animate="animate" className='sliding-text'>
      
   <h1> Web Developer React.Js </h1>
    </motion.div>
-    <div className='img-container'>
-  <img src="/final-img.png" ></img>
-    </div>
     </div>
   )
 }

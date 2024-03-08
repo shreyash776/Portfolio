@@ -19,7 +19,7 @@ const items=[
         id:3,
         title:"Todo-list",
         img:"/todo.png ",
-        desc:  "ReactToDo is a minimalist to-do list app crafted with React.js. Effortlessly manage tasks with streamlined features for quick adding, deleting, and marking as complete. Stay organized and focused with ReactToDo's clean interface and lightning-fast performance.",
+        desc:  "React ToDo is a minimalist to-do list app crafted with React.js. Effortlessly manage tasks with streamlined features for quick adding, deleting, and marking as complete. Stay organized and focused with ReactToDo's clean interface and lightning-fast performance.",
         git:"https://github.com/shreyash776/Todo-list"
     },
     {
@@ -69,8 +69,7 @@ const Single=({item})=>{
     const y=useTransform(scrollYProgress,[0,1],[-590,250]);
  return(
     <section id="Projects" >
-       <div className='container'>
-       <div className='p-wrapper'>
+       <div className='container'>     
        <div className='img-box' ref={ref}>
        <img className='project-img' src={item.img} alt="img" />
         </div>
@@ -80,8 +79,6 @@ const Single=({item})=>{
             <a href={item.git} target="_blank">See Demo</a>
             {/* <button><a href={item.git} target="_blank">See Demo</a></button> */}
         </motion.div>
-       </div>
-       
        </div>
     </section>
  )
