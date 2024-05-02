@@ -59,7 +59,7 @@ a{
   align-items: center;
   background-color: white;
   color:black;
-  z-index: 999999999999999;
+  z-index: 98;
   position: absolute;
 } 
 .bg{
@@ -69,7 +69,7 @@ a{
   bottom:0;
   width:18.75rem;
   background: white;
-  z-index: 9999999999999999999999999999999999999;
+  z-index: 999999999999999;
 
 }
 .side-btn{
@@ -77,6 +77,7 @@ a{
   height:3rem;
   border-radius: 50%;
   position:fixed;
+  z-index: 99999999999999999999999;
   top:25px;
   left:25px;
   background-color: transparent ;
@@ -99,6 +100,7 @@ a{
  align-items: center;
  gap:20px;
  color:#0c0c1d;
+ z-index: 99999999999999999999;
 }
 .links a{
   font-size:40px ;
@@ -241,7 +243,7 @@ a{
   margin:0;
 }   
 .buttons{
-  z-index: 999999999999999999999999999999999999;
+  z-index: 99999;
 }
 .buttons button{
   padding:20px;
@@ -252,7 +254,7 @@ a{
   margin-right:20px;
   cursor:pointer;
   font-weight: 300;
-  z-index: 9999999999999999999999999999999;
+  z-index: 9999;
 }        
 .sliding-text{
   position:absolute;
