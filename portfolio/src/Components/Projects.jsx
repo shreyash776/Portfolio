@@ -4,7 +4,7 @@ const items=[
     {
         id:1,
         title:"WordCraft",
-        img:"/portfolio/public/Screenshot 2024-05-02 130732.png",
+        img:"/image.png",
        git:"https://github.com/shreyash776/blog-backend",
         desc:
         "A dynamic blogging website designed to empower users to express themselves through writing. This platform offers a seamless experience for both writers and readers, allowing users to create, read, edit, and delete their blogs effortlessly. With a user-friendly interface, individuals can explore a variety of topics, engage with thought-provoking content, and interact with a vibrant community through comments and discussions. "
