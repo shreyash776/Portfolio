@@ -69,6 +69,7 @@ a{
   bottom:0;
   width:18.75rem;
   background: white;
+  z-index: 9999999999999999999999999999999999999;
 
 }
 .side-btn{
